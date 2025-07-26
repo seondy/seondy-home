@@ -1,0 +1,11 @@
+@use "./reset";
+@use "./variables";
+@use "./mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, * {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+}
