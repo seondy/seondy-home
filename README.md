@@ -1,1 +1,19 @@
-# seondy-home
+# Seondy Home
+```bash
+# node version
+22.17.1 (LTS)
+```
+```bash
+# yarn
+yarn install
+
+yarn dev
+
+yarn build
+
+yarn preview
+```
+```plain
+- 기술 학습 및 테스트 목적
+- Nuxt4, TypeScript 활용
+```
