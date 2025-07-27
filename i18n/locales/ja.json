@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "SEONDY：ソン・ダヨン",
+    "description": "Webフロントエンドエンジニア、ソン・ダヨンの個人ホームページです。",
+    "ogTitle": "SEONDY：ソン・ダヨン",
+    "ogDescription": "Webフロントエンドエンジニア、ソン・ダヨンの個人ホームページです。",
+    "ogImage": "",
+    "twitterTitle": "SEONDY：ソン・ダヨン",
+    "twitterDescription": "Webフロントエンドエンジニア、ソン・ダヨンの個人ホームページです。",
+    "twitterImage": ""
+  },
+  "error": {
+    "title": "エラーが発生しました。",
+    "button": "ホームに戻る"
+  },
+  "header": {
+    "main": "メイン",
+    "project": "プロジェクト",
+    "test": "テスト",
+    "guestbook": "ゲストブック"
+  },
+  "main": {
+    "title": "はじめまして、Webフロントエンドエンジニアのソン・ダヨンです。",
+    "description": "説明が入るスペース",
+    "projects": "プロジェクト",
+    "career": "経歴",
+    "education": "学歴",
+    "certifications": "資格",
+    "languages": "言語",
+    "skills": "スキル"
+  }
+}

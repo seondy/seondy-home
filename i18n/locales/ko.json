@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "SEONDY:선다영",
+    "description": "프론트엔드 개발자 선다영의 개인 홈페이지입니다.",
+    "ogTitle": "SEONDY:선다영",
+    "ogDescription": "프론트엔드 개발자 선다영의 개인 홈페이지입니다.",
+    "ogImage": "",
+    "twitterTitle": "SEONDY:선다영",
+    "twitterDescription": "프론트엔드 개발자 선다영의 개인 홈페이지입니다.",
+    "twitterImage": ""
+  },
+  "error": {
+    "title": "오류가 발생했습니다.",
+    "button": "홈으로 돌아가기"
+  },
+  "header": {
+    "main": "메인",
+    "project": "프로젝트",
+    "test": "테스트",
+    "guestbook": "방명록"
+  },
+  "main": {
+    "title": "안녕하세요, 프론트엔드 개발자 선다영입니다.",
+    "description": "설명 들어가는 공간",
+    "projects": "프로젝트",
+    "career": "경력",
+    "education": "학력",
+    "certifications": "자격증",
+    "languages": "언어",
+    "skills": "기술 스택"
+  }
+}
