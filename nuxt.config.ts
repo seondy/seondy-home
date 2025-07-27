@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/i18n"],
   i18n: {
-    defaultLocale: "en",
+    defaultLocale: "ko",
     locales: [
       { code: "ko", iso: "ko-KR", name: "Korean", file: "ko.json" },
       { code: "ja", iso: "ja-JP", name: "Japanese", file: "ja.json" },
