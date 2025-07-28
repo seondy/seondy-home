@@ -1,13 +1,12 @@
 <template>
   <section class="intro">
-    <h1>안녕하세요, 프론트엔드 개발자 선다영입니다.</h1>
-    <h1>안녕하세요, 프론트엔드 개발자 선다영입니다.</h1>
+    <h1>{{ t("main.title") }}</h1>
     <div class="intro-description">
-      <p>설명 들어가는 공간</p>
+      <p>{{ t("main.description") }}</p>
     </div>
   </section>
   <section class="projects">
-    <h2>프로젝트</h2>
+    <h2>{{ t("main.projects") }}</h2>
     <ul>
       <li>
         <nuxt-link :to="localePath('/project/learners-high')"
@@ -26,6 +25,8 @@
   </section>
 </template>
 <script setup>
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 const localePath = useLocalePath();
 </script>
 <style scoped></style>

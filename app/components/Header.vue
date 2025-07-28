@@ -14,18 +14,19 @@
           <nuxt-link :to="localePath('/guestbook')">{{
             t("header.guestbook")
           }}</nuxt-link>
-          <select v-model="locale" class="lang-select">
-            <option value="ko">한국어</option>
-            <option value="ja">日本語</option>
-          </select>
+          <div class="lang-select">
+            <NuxtLink :to="switchLocalePath('ko')">가</NuxtLink>
+            <NuxtLink :to="switchLocalePath('ja')">あ</NuxtLink>
+          </div>
         </div>
       </ul>
     </nav>
   </header>
 </template>
-<script setup>
+<script setup lang="ts">
 import { useI18n } from "vue-i18n";
 const { t } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
 const localePath = useLocalePath();
 </script>
 <style scoped>
@@ -55,6 +56,15 @@ header {
           &:hover,
           &.router-link-active {
             background-color: red;
+          }
+        }
+        .lang-select {
+          display: flex;
+          a {
+            &:hover,
+            &.router-link-active {
+              background-color: blue;
+            }
           }
         }
       }

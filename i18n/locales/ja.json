@@ -28,5 +28,15 @@
     "certifications": "資格",
     "languages": "言語",
     "skills": "スキル"
+  },
+  "projects": {
+    "learnersHigh": {
+      "title": "Learners High",
+      "description": "学習者のためのオンライン学習プラットフォーム。"
+    },
+    "seondyHome": {
+      "title": "SEONDYホーム",
+      "description": "ソン・ダヨンの個人ホームページ。"
+    }
   }
 }
