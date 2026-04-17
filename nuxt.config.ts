@@ -14,8 +14,7 @@ export default defineNuxtConfig({
     langDir: "locales/",
     detectBrowserLanguage: {
       fallbackLocale: "ko",
-      redirectOn: "root",
-      useCookie: false,
+      redirectOn: "root"
     },
   },
 });

@@ -4,20 +4,23 @@
       <ul>
         <nuxt-link :to="localePath('/')">SEONDY</nuxt-link>
         <div class="nav-links">
-          <nuxt-link :to="localePath('/')">{{ t("header.main") }}</nuxt-link>
-          <nuxt-link :to="localePath('/project')">{{
-            t("header.project")
-          }}</nuxt-link>
-          <nuxt-link :to="localePath('/test')">{{
-            t("header.test")
-          }}</nuxt-link>
-          <nuxt-link :to="localePath('/guestbook')">{{
-            t("header.guestbook")
-          }}</nuxt-link>
+          <nuxt-link v-for="link in navLinks" :key="link.path" :to="localePath(link.path)">
+            {{ t(link.key) }}
+          </nuxt-link>
+
+          <!-- button ver -->
           <div class="lang-select">
             <NuxtLink :to="switchLocalePath('ko')">가</NuxtLink>
             <NuxtLink :to="switchLocalePath('ja')">あ</NuxtLink>
           </div>
+          <!-- //button ver -->
+
+          <!-- select box ver -->
+          <select :value="locale" @change="(e) => navigateTo(switchLocalePath(e.target.value))" class="lang-select">
+            <option value="ko" :selected="locale === 'ko'">한국어</option>
+            <option value="ja" :selected="locale === 'ja'">日本語</option>
+          </select>
+          <!-- //select box ver -->
         </div>
       </ul>
     </nav>
@@ -25,9 +28,16 @@
 </template>
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
-const { t } = useI18n();
-const switchLocalePath = useSwitchLocalePath();
+const { t, locale } = useI18n();
 const localePath = useLocalePath();
+const switchLocalePath = useSwitchLocalePath();
+
+const navLinks = [
+  { path: "/", key: "header.main" },
+  { path: "/project", key: "header.project" },
+  { path: "/test", key: "header.test" },
+  { path: "/guestbook", key: "header.guestbook" },
+];
 </script>
 <style scoped>
 header {

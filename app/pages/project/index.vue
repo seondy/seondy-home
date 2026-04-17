@@ -1,18 +1,20 @@
 <template>
   <h1>Seondy Project List</h1>
   <ul>
-    <nuxt-link :to="localePath('/project/good-news')">Good News</nuxt-link>
-    <nuxt-link :to="localePath('/project/youniverse')">Youniverse</nuxt-link>
-    <nuxt-link :to="localePath('/project/halmang-vision')"
-      >Halmang Vision</nuxt-link
-    >
-    <nuxt-link :to="localePath('/project/learners-high')"
-      >Learner's High</nuxt-link
-    >
-    <nuxt-link :to="localePath('/project/design')">Design</nuxt-link>
+    <li v-for="project in projects" :key="project.path">
+      <nuxt-link :to="localePath(project.path)">{{ project.name }}</nuxt-link>
+    </li>
   </ul>
 </template>
 <script setup>
 const localePath = useLocalePath();
+
+const projects = [
+  { path: "/project/good-news", name: "Good News" },
+  { path: "/project/youniverse", name: "Youniverse" },
+  { path: "/project/halmang-vision", name: "Halmang Vision" },
+  { path: "/project/learners-high", name: "Learner's High" },
+  { path: "/project/design", name: "Design" },
+];
 </script>
 <style scoped></style>

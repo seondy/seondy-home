@@ -2,7 +2,7 @@
 `last updated: 2025.07.26`
 ```bash
 # node version
-22.17.1 (LTS)
+24.15.0 (LTS)
 ```
 ```bash
 # yarn

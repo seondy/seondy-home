@@ -8,19 +8,9 @@
   <section class="projects">
     <h2>{{ t("main.projects") }}</h2>
     <ul>
-      <li>
-        <nuxt-link :to="localePath('/project/learners-high')"
-          >Learner's High</nuxt-link
-        >
-      </li>
-      <li>
-        <nuxt-link :to="localePath('/project/halmang-vision')"
-          >Halmang Vision</nuxt-link
-        >
-      </li>
-      <li>
-        <nuxt-link :to="localePath('/project/design')">Design</nuxt-link>
-      </li>
+      <li><nuxt-link :to="localePath('/project/learners-high')">Learner's High</nuxt-link></li>
+      <li><nuxt-link :to="localePath('/project/halmang-vision')">Halmang Vision</nuxt-link></li>
+      <li><nuxt-link :to="localePath('/project/design')">Design</nuxt-link></li>
     </ul>
   </section>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div>😊2025 Seondy's</div>
+    <div>2026 seondy</div>
     <div class="footer-links">
       <a href="https://github.com/seondy" target="_blank" rel="noopener"
         >GitHub</a
